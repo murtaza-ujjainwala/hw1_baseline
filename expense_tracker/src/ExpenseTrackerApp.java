@@ -5,7 +5,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class ExpenseTrackerApp {
 
-  /*
+  /**
    * Initializes the view for the application, and sets up event handling for "Add Transaction" button clicks.
    * @param args Command-line arguments.
    */
