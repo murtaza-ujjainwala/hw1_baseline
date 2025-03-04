@@ -5,11 +5,17 @@ import javax.swing.table.DefaultTableModel;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Testing environment for the Expense Tracker application.
+ */
 public class ExpenseTrackerTest {
 
     private ExpenseTrackerView view;
     private ExpenseTrackerApp app;
 
+    /**
+     * Initializes the MVC components of the application.
+     */
     @Before
     public void setup() {
         DefaultTableModel tableModel = new DefaultTableModel();
@@ -21,6 +27,9 @@ public class ExpenseTrackerTest {
         app = new ExpenseTrackerApp();
     }
 
+    /**
+     * Tests if adding a transaction with a valid number and category works.
+     */
     @Test
     public void testAddTransaction() {
         // Create a new transaction
